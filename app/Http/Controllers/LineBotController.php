@@ -16,6 +16,11 @@ use LINE\LINEBot\MessageBuilder\Flex\ContainerBuilder\CarouselContainerBuilder;
 
 class LineBotController extends Controller
 {
+    public function index()
+    {
+      return 'hello world';
+    }
+
     public function restaurants(Request $request)
     {
       Log::debug($request->header());
